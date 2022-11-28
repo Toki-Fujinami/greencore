@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Cryptogreen
+Comment=Cryptogreen P2P Cryptocurrency
+Comment[fr]=Cryptogreen, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Cryptogreen, eşten eşe kriptografik sanal para birimi
+Exec=cryptogreen-qt %u
+Terminal=false
+Type=Application
+Icon=cryptogreen128
+MimeType=x-scheme-handler/cryptogreen;
+Categories=Office;Finance;

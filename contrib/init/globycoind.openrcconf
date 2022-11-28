@@ -1,0 +1,26 @@
+# /etc/conf.d/cryptogreend: config file for /etc/init.d/cryptogreend
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/cryptogreen/cryptogreen.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/cryptogreend"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/cryptogreend.pid"
+
+# Where to write cryptogreend data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/cryptogreend"
+
+# User and group to own cryptogreend process
+#BITCOIND_USER="cryptogreen"
+#BITCOIND_GROUP="cryptogreen"
+
+# Path to cryptogreend executable
+#BITCOIND_BIN="/usr/bin/cryptogreend"
+
+# Nice value to run cryptogreend under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

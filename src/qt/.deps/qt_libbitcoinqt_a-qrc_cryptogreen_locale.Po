@@ -1,0 +1,2 @@
+qt/qt_libbitcoinqt_a-qrc_cryptogreen_locale.o: \
+ qt/qrc_cryptogreen_locale.cpp

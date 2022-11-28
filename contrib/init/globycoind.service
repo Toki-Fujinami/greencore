@@ -1,0 +1,26 @@
+[Unit]
+Description=Cryptogreen's distributed currency daemon
+After=network.target
+
+[Service]
+User=cryptogreen
+Group=cryptogreen
+
+Type=forking
+PIDFile=/var/lib/cryptogreend/cryptogreend.pid
+
+ExecStart=/usr/bin/cryptogreend -daemon -pid=/var/lib/cryptogreend/cryptogreend.pid \
+          -conf=/etc/cryptogreen/cryptogreen.conf -datadir=/var/lib/cryptogreend
+
+ExecStop=-/usr/bin/cryptogreen-cli -conf=/etc/cryptogreen/cryptogreen.conf \
+         -datadir=/var/lib/cryptogreend stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
